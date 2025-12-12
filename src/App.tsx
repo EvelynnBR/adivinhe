@@ -85,7 +85,7 @@ export default function App() {
 
     setTimeout(() => {
       if (score === challenge.word.length) {
-        return endGame("Parabéns, você descobriu a palavra!")
+        return endGame("Parabéns, você descobriu a palavra!: " + challenge.word)
       }
       const attemptLimit = challenge.word.length + ATTEMPTS_MARGIN
 
